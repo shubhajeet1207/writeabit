@@ -1,0 +1,19 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<!--<script src="https://cdn.tiny.cloud/1/nyy6ynirrydu9u7bku5coyo5i3pwjndy1rhahwozjsiiif4i/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>-->
+
+    <div class="content-section">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Blog Post</legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-primary" type="submit">Post</button>
+            </div>
+        </form>
+    </div>
+{% endblock content %}
