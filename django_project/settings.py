@@ -95,16 +95,11 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 #     }
 # }
 
-
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'django_project',
-        'USER': 'postgres',
-        'PASSWORD': 'shubhapra12072000',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
-    }
+    'default': dj_database_url.config(
+        default='postgresql://postgres:postgres@localhost:5432/django_project',
+        conn_max_age=600
+    )
 }
 
 
