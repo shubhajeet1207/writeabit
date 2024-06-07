@@ -1,6 +1,6 @@
 {% extends "blog/base.html" %}
 {% block content %}
-    <h2 class="mb-3">Posts by - {{ view.kwargs.username }}</h2>
+    <h2 class="mb-3">{{ view.kwargs.username }}</h2>
     <p class="mb-3">Total Posts - {{ page_obj.paginator.count }}</p>
     {% for post in posts %}
         <article class="media content-section">

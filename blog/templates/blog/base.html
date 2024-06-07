@@ -50,7 +50,7 @@
     </header>
     <main role="main" class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md">
           {% if messages %}
             {% for message in messages %}
               <div class="alert alert-{{ message.tags }}">
@@ -60,33 +60,7 @@
           {% endif %}
           {% block content %}{% endblock %}
         </div>
-        <div class="col-md-4">
-          <div class="content-section">
-             <h3>
-                 <img class="rounded-circle admin-img" src="{% static 'blog/admin.jfif' %}"> Admin
-             </h3>
-                <p class="list-group-item list-group-item-warning">Hey! I'm Shubhajeet Pradhan, undergrad in ABV-Indian Institute of Information Technology and Management, Gwalior. I've proficient hands in Front End development, Django and Flask frameworks with good graphic designing skills.</p>
-                    <br>
-                    <button type="button" class="btn btn-light btn-sm">
-                    <a href="http://shubhajeet.xyz">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3549dd" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
-  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
-</svg> Visit Portfolio
-                    </a>
-                </button>
-                    <button type="button" class="btn btn-outline-light btn-sm">
-                         <a STYLE="text-decoration:none; color=[#fff]"  href="mailto:shubhajeet.pradhan12@gmail.com">
-                         <svg stroke="currentColor" fill="#3549dd" stroke-width="0" viewBox="0 -4 24 24" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M23,20 L23,6 L12,15 L1,6 L1,20 L23,20 Z M12,12 L22,4 L2,4 L12,12 Z"></path></svg>  Contact Me
-                         </a>
-                    </button>
-                  </div>
-              <br> </br>
-        </div>
       </div>
-        <div class="footer">
-              <p>Made with <svg stroke="currentColor" fill="#ff0000" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"></path></svg> by Shubhajeet Pradhan</p>
-        </div>
     </main>
 
     <!-- Optional JavaScript -->

@@ -1,0 +1,182 @@
+/* additional css file */
+@import url('https://fonts.cdnfonts.com/css/nasalization-2');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,300,300i,400,400i,700,700i,900,900i');
+@import url('https://fonts.cdnfonts.com/css/anurati');
+
+body {
+  background: #3e4053;
+  color: #ffffff;
+  margin-top: 5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #f4f3f9;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+ }
+
+.list-group-item-warning {
+  color: #f4f3f9;
+  background-color: transparent;
+}
+
+.col-md-4 {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50%;
+}
+
+.btn-light.btn-sm {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul {
+  margin: 0;
+}
+
+.bg-steel {
+  background-color: #23242f !important;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.navbar-dark .navbar-brand {
+  color: #ffffff;
+  font-family: "Anurati", sans-serif;
+  animation: nav-brand 1s linear 0s 1 normal forwards;
+ }
+
+@keyframes nav-brand {
+  0% {
+    opacity: 0;
+    transform: rotateY(-70deg);
+    transform-origin: left;
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateY(0);
+    transform-origin: left;
+  }
+}
+
+.content-section {
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.article-title {
+  color: #f4f3f9;
+}
+
+a.article-title:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+.admin-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3;
+  color: #ffc107;
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+.footer {
+ display: flex;
+ justify-content: space-evenly;
+}
+
+.jumbotron {
+  background-color: transparent;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 767.98px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  .site-header .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .content-section {
+    padding: 5px 10px;
+  }
+  .account-heading {
+    font-size: 2rem;
+  }
+  .account-img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navbar-brand {
+    font-size: 1.75rem;
+  }
+  .content-section {
+    padding: 10px 15px;
+  }
+  .account-heading {
+    font-size: 2.25rem;
+  }
+  .account-img {
+    height: 110px;
+    width: 110px;
+  }
+}
