@@ -3,11 +3,6 @@ Live at: [https://writeabit.herokuapp.com/](url)
 
 Public blog site made with Django framework. writeABit-BlogSite is a blog page where you can create your own blogs and can see other blogs from several bloggers.
 Don't forget to upload your Profile picture.
-## Preview
-![mockup1](https://user-images.githubusercontent.com/76960580/147415012-0afa55b8-99d7-497d-9844-1326426bd0b2.jpg)
-![img-3](https://user-images.githubusercontent.com/76960580/147415016-9e146db2-5dea-45bc-80a8-3bc732a0a525.jpg)
-![img-4](https://user-images.githubusercontent.com/76960580/147415019-7bc63ba8-a738-401e-b4d1-cc7ca7594cab.jpg)
-![img-5](https://user-images.githubusercontent.com/76960580/147414999-5ffb213a-35b8-4c2c-859c-b5349ae6a6b6.jpg)
 
 ### Installation Process
   Run the following command in sequence for better experience of project. 
