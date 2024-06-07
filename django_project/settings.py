@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('eb655c971180b3bb98b8005a80f9a14c7cc4d41177190940')
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['f"{writeAbit}.fly.dev"']
+ALLOWED_HOSTS = ['']
 
 
 # Application definition
@@ -88,24 +88,24 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'django_project',
-#         'USER': 'postgres',
-#         'PASSWORD': 'shubhapra12072000',
-#         'HOST': '127.0.0.1',
-#         'PORT': '5432',
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'django_project',
+        'USER': 'postgres',
+        'PASSWORD': 'shubhapra12072000',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    }
+}
 
 
 # Password validation
@@ -156,6 +156,13 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = 'blog-home'
 LOGIN_URL = 'login'
 
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'spymonk-cloud',
+    'API_KEY': '575685413639591',
+    'API_SECRET': 'Kspt3mQs4fSDi9RuYcN_yWCEE-c'
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
